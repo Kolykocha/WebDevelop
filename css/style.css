@@ -9,7 +9,7 @@ body, header, main, footer {
     width: 100%
 }
 .headerbg {
-	background-color:#B8860B;
+	background-color:#F5DEB3;
     height: 7vh;
     display: flex;
     flex-direction: row;
@@ -20,15 +20,16 @@ body, header, main, footer {
 	height: 10vh;
 }
 .mainbg {
-    background-color: #778899;
+    background-color: #FFEBCD;
     display: flex;
     flex-direction: column;
 	font-family: Times New Roman, serif;
 	font-size: 1.2em;
 	height: 80vh;
 }
+
 .footerbg{
-	background-color: #808080;
+	background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
 	height: 10vh;

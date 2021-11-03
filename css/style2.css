@@ -25,10 +25,11 @@ body, header, main, footer {
     flex-direction: column;
 	font-family: Times New Roman, serif;
 	font-size: 1.2em;
+	height: 140vh;
 	
 }
 .footerbg{
-	background-color: #808080;
+	background-color: #FFFFF;
     display: flex;
     flex-direction: column;
 	height: 10vh;
