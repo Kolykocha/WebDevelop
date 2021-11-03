@@ -1,0 +1,42 @@
+.body {
+    display: flex;
+}
+
+body, header, main, footer {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%
+}
+.headerbg {
+	background-color:#B8860B;
+    height: 7vh;
+    display: flex;
+    flex-direction: row;
+    justify-items: baseline;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+	height: 10vh;
+}
+.mainbg {
+    background-color: #778899;
+    display: flex;
+    flex-direction: column;
+	font-family: Times New Roman, serif;
+	font-size: 1.2em;
+	height: 80vh;
+}
+.footerbg{
+	background-color: #808080;
+    display: flex;
+    flex-direction: column;
+	height: 10vh;
+}
+.alignnone {
+	display: block;
+	border-radius: 50%;
+	border: 5px #cfc solid;
+	box-shadow: 0 0 10px #444;
+	margin: auto;
+}

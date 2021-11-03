@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grey+Qo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@300;400;500&display=swap');
+
+main {
+    font-family: 'Gemunu', sans-serif;
+    overflow: hidden;
+    margin: 0;
+    background: -webkit-linear-gradient(to right, #edefee,#c9c9c9);
+    background: linear-gradient(to right, #edefee,#c9c9c9);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-family: 'Gemunu', cursive;
+    font-size: 60px;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    padding: 0 15px;
+	
+}
+
+.slide {
+    height: 100vh;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+    color: #1d1d1d;
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    transition: all 500ms ease-in-out;
+}
+
+.slide h3 {
+    position: absolute;
+    font-size: 24px;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+}
+
+.slide.active {
+    flex: 10;
+}
+
+.slide.active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
