@@ -1,0 +1,20 @@
+{% load static %}
+
+<aside>
+    <div class="aside__body">
+        <span class="aside__title"> Dota2 Fans </span>
+
+        <nav class="aside__navigation">
+            <a href="{% url 'home' %}" class="aside__link"><i class="fab fa-apple"></i> home</a>
+            <a href="{% url 'posts' %}" class="aside__link"><i class="fas fa-clipboard"></i> posts</a>
+            {% if user.is_authenticated %}
+            <a href="{% url 'create' %}" class="aside__link"><i class="fas fa-beer"></i>
+ add post</a>
+            <a href="{% url 'account_logout' %}" class="aside__link"><i class="fas fa-ankh"></i>
+ log out</a>
+            {% else %}
+            <a href="{% url 'account_login' %}" class="aside__link"><i class="fab fa-accessible-icon"></i> log in</a>
+            {% endif %}
+        </nav>
+    </div>
+</aside>
